@@ -1,0 +1,50 @@
+/* carty styles */
+
+#carty-container {
+	position: fixed;
+	width: 100%;
+	background: #eee;
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(214,214,214,1) 100%);
+	padding: 15px 15px 35px 15px;
+	height: 100%;
+	box-shadow: 0px 4px 15px 1px #444;
+	z-index: 95;
+}
+
+@media (min-width: 992px) {
+	#carty-container {
+		width: 650px;
+	}
+}
+
+.carty-hide {	
+	width: 650px;
+	top: 0;
+	right: -800px;
+}
+
+.carty-show {
+	width: 650px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: auto;
+}
+
+.cart-list,
+.cart-form {
+	margin: 5px 0;
+	padding: 15px;
+	background: rgba(0,0,0,0.1);
+	border-radius: 9px;
+}
+
+.cart-list {
+	background: #f5f5f5;
+}
+
+#carty-buttons {
+	position: fixed;
+	right: 5px;
+	bottom: 5px;
+}
